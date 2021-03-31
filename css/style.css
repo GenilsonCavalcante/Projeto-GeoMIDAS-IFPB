@@ -6,8 +6,8 @@ ESTRUTURA BASE
 ***** DECLARAÇÃO DE VARIÁVEIS 
 ***** BODY
 ***** HEADER
-***** FOOTER
 ***** PÁGINA INICIAL
+***** FOOTER
 ***** @MEDIA - TORNAR SITE RESPONSIVO
 ***** EXTRAS
 */
@@ -23,23 +23,45 @@ html, body, figure, img, div, p, h1, h2, h3, h4, h5, h6, ul, li, a, main {
 
 
 /*   DECLARAÇÃO DE VARIÁVEIS    */
-
+:root{
+    --corBackgroundPrimaria: #94ADCB;
+}
 
 
 /*   BODY   */
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 /*   HEADER   */
-
-
-
-/*   FOOTER   */
-
+header{}
+header .container{}
+header .img-fundo{}
+header figure img{}
+header figure figcaption{}
+header ul{}
+header ul li{}
 
 
 /*   PÁGINA INICIAL   */
+main{}
+main section{}
+main section h2{}
+main section p{}
 
+
+/*   FOOTER   */
+footer{}
+footer .container{}
+footer .area_contato{}
+footer nav.contato{}
+footer ul{}
+footer ul li{}
+footer ul li a{}
+footer .portifolio{}
+footer .portifolio p{}
+footer .portifolio p a{}
 
 
 /*   @MEDIA - TORNAR SITE RESPONSIVO   */
