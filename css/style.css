@@ -36,12 +36,58 @@ body {
 
 /*   HEADER   */
 header{}
-header .container{}
-header .img-fundo{}
-header figure img{}
-header figure figcaption{}
-header ul{}
-header ul li{}
+header .container{
+    position: relative;
+}
+header img.img-fundo{
+    max-width: 100%;
+}
+header h1{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 95px;
+    left: 10px;
+    color: rgb(65, 63, 63);
+}
+header figure img{
+    width: 150px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: .8;
+}
+header figure img:hover{
+    opacity: 1;
+    cursor: pointer;
+    
+}
+header figure figcaption{
+    display: none;
+}
+header .navegacao{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+header .navegacao ul{
+    display: flex;
+    justify-content: flex-end;
+}
+header .navegacao ul li{
+    margin: 0 10px;
+    padding: 10px;
+    width: 80px;
+    background-color: var(--corBackgroundPrimaria);
+    text-align: center;
+}
+header .navegacao ul li:hover{
+    background-color: #4288df;;
+    transition: 1s;
+}
+header .navegacao ul li a{
+    color: black;
+    font-weight: bold;
+}
 
 
 /*   PÁGINA INICIAL   */
@@ -65,7 +111,55 @@ footer .portifolio p a{}
 
 
 /*   @MEDIA - TORNAR SITE RESPONSIVO   */
+@media (max-width: 800px){
+    header h1{
+        font-size: 1.2rem;
+    }
+    header figure img{
+        width: 130px;
+    }
+    header .navegacao ul li{
+        margin: 0 8px;
+        padding: 8px;
+        width: 75px;
+    }
+}
 
+
+@media (max-width: 700px){
+    header h1{
+        font-size: 1.08rem;
+    }
+    header .navegacao ul{
+        flex-direction: column;
+    }
+    header .navegacao ul li{
+        margin-bottom: 5px;
+        padding: 10px;
+        width: 80px;
+    }
+}
+
+@media (max-width: 600px){
+    header .navegacao ul{
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    header .navegacao{
+        position: static;
+        top: 0px;
+        right: 10px;
+    }
+
+
+    header .navegacao ul li{
+        margin: 0 10px;
+        padding: 10px;
+        width: 80px;
+        background-color: var(--corBackgroundPrimaria);
+        text-align: center;
+    }
+}
 
 
 /*   EXTRAS   */
