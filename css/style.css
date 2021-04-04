@@ -25,6 +25,9 @@ html, body, figure, img, div, p, h1, h2, h3, h4, h5, h6, ul, li, a, main {
 /*   DECLARAÇÃO DE VARIÁVEIS    */
 :root{
     --corBackgroundPrimaria: #94ADCB;
+    --corBackgroundButton: #4288df;
+    --corTextPrimaria: rgb(65, 63, 63);
+    --corTextSecundaria: #fff;
 }
 
 
@@ -35,7 +38,6 @@ body {
 
 
 /*   HEADER   */
-header{}
 header .container{
     position: relative;
 }
@@ -47,7 +49,16 @@ header h1{
     font-size: 1.5rem;
     top: 95px;
     left: 10px;
-    color: rgb(65, 63, 63);
+    color: var(--corTextPrimaria);
+}
+.titulo{
+    margin: 30px auto;
+    width: 80%;
+}
+.titulo h2{
+    margin: 20px auto;
+    padding: 10px;
+    background-color: var(--corBackgroundPrimaria)
 }
 header figure img{
     width: 150px;
@@ -81,33 +92,78 @@ header .navegacao ul li{
     text-align: center;
 }
 header .navegacao ul li:hover{
-    background-color: #4288df;;
+    background-color: var(--corBackgroundButton);
     transition: 1s;
 }
 header .navegacao ul li a{
-    color: black;
+    color: var(--corTextPrimaria);
     font-weight: bold;
+}
+header .navegacao ul li a:hover{
+    color: var(--corTextSecundaria);
+    border-bottom: 2px solid var(--corTextSecundaria);
 }
 
 
 /*   PÁGINA INICIAL   */
-main{}
-main section{}
-main section h2{}
-main section p{}
+
+main .conteiner{
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+    border: 3px solid var(--corBackgroundPrimaria);
+}
+main section p{
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 20px;
+}
 
 
 /*   FOOTER   */
-footer{}
-footer .container{}
-footer .area_contato{}
-footer nav.contato{}
-footer ul{}
-footer ul li{}
-footer ul li a{}
-footer .portifolio{}
-footer .portifolio p{}
-footer .portifolio p a{}
+footer{
+    background-color: var(--corBackgroundPrimaria);
+    margin-top: 50px;
+}
+footer .conteiner{
+    padding: 40px;
+    padding-bottom: 10px;
+}
+footer .area_contato{
+    display: flex;
+    flex-direction: column;
+    color: var(--corTextSecundaria);
+    align-items: left;
+}
+footer ul li{
+    margin: 10px;
+}
+footer ul li a{
+    color: var(--corTextSecundaria);
+}
+footer .portifolio{
+    display: flex;
+    flex-direction: column;
+    color: var(--corTextSecundaria);
+    padding: 20px 0;
+    align-items: center;
+}
+footer .portifolio a{
+    color: var(--corTextSecundaria);
+    border-bottom: 1px solid var(--corTextSecundaria);
+}
+footer .portifolio a:hover{
+    border-bottom: 2px solid var(--corTextSecundaria);
+    color: var(--corTextPrimaria);
+}
+footer hr{
+    background-color: var(--corTextPrimaria);
+    height: 1px;
+    border: none;
+}
+footer .portifolio p{
+    text-align: center;
+}
 
 
 /*   @MEDIA - TORNAR SITE RESPONSIVO   */
