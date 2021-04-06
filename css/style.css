@@ -41,8 +41,10 @@ body {
 header .container{
     position: relative;
 }
-header img.img-fundo{
-    max-width: 100%;
+header section.imagem_fundo{
+    background-image: url(../img/Img-fundo-cortada-2.jpg);
+    background-size: cover;
+    min-height: 75vh;
 }
 header h1{
     position: absolute;
