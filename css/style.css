@@ -42,7 +42,7 @@ header .container{
     position: relative;
 }
 header section.imagem_fundo{
-    background-image: url(../img/Img-fundo-cortada-2.jpg);
+    background-image: url(../img/imagem_fundo.jpg);
     background-size: cover;
     min-height: 75vh;
 }
