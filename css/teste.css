@@ -1,0 +1,223 @@
+/*
+-----------------------------------------------------------
+ESTRUTURA BASE
+-----------------------------------------------------------
+***** ESTILOS GERAIS
+***** DECLARAÇÃO DE VARIÁVEIS 
+***** BODY
+***** HEADER
+***** PÁGINA INICIAL
+***** FOOTER
+***** @MEDIA - TORNAR SITE RESPONSIVO
+***** EXTRAS
+*/
+
+/*   ESTILOS GERAIS   */
+html, body, figure, img, div, p, h1, h2, h3, h4, h5, h6, ul, li, a, main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/*   DECLARAÇÃO DE VARIÁVEIS    */
+:root{
+    --corBackgroundPrimaria: #94ADCB;
+    --corBackgroundButton: #4288df;
+    --corTextPrimaria: rgb(65, 63, 63);
+    --corTextSecundaria: #fff;
+}
+
+
+/*   BODY   */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*   HEADER   */
+header .container{
+    position: relative;
+}
+header img.img-fundo{
+    max-width: 100%;
+}
+header h1{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 95px;
+    left: 10px;
+    color: var(--corTextPrimaria);
+}
+.titulo{
+    margin: 30px auto;
+    width: 80%;
+}
+.titulo h2{
+    margin: 20px auto;
+    padding: 10px;
+    background-color: var(--corBackgroundPrimaria)
+}
+header figure img{
+    width: 150px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: .8;
+}
+header figure img:hover{
+    opacity: 1;
+    cursor: pointer;
+    
+}
+header figure figcaption{
+    display: none;
+}
+header .navegacao{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+header .navegacao ul{
+    display: flex;
+    justify-content: flex-end;
+}
+header .navegacao ul li{
+    margin: 0 10px;
+    padding: 10px;
+    width: 80px;
+    background-color: var(--corBackgroundPrimaria);
+    text-align: center;
+}
+header .navegacao ul li:hover{
+    background-color: var(--corBackgroundButton);
+    transition: 1s;
+}
+header .navegacao ul li a{
+    color: var(--corTextPrimaria);
+    font-weight: bold;
+}
+header .navegacao ul li a:hover{
+    color: var(--corTextSecundaria);
+    border-bottom: 2px solid var(--corTextSecundaria);
+}
+
+
+/*   PÁGINA INICIAL   */
+
+main .conteiner{
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+    border: 3px solid var(--corBackgroundPrimaria);
+}
+main section p{
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+
+/*   FOOTER   */
+footer{
+    background-color: var(--corBackgroundPrimaria);
+    margin-top: 50px;
+}
+footer .conteiner{
+    padding: 40px;
+    padding-bottom: 10px;
+}
+footer .area_contato{
+    display: flex;
+    flex-direction: column;
+    color: var(--corTextSecundaria);
+    align-items: left;
+}
+footer ul li{
+    margin: 10px;
+}
+footer ul li a{
+    color: var(--corTextSecundaria);
+}
+footer .portifolio{
+    display: flex;
+    flex-direction: column;
+    color: var(--corTextSecundaria);
+    padding: 20px 0;
+    align-items: center;
+}
+footer .portifolio a{
+    color: var(--corTextSecundaria);
+    border-bottom: 1px solid var(--corTextSecundaria);
+}
+footer .portifolio a:hover{
+    border-bottom: 2px solid var(--corTextSecundaria);
+    color: var(--corTextPrimaria);
+}
+footer hr{
+    background-color: var(--corTextPrimaria);
+    height: 1px;
+    border: none;
+}
+footer .portifolio p{
+    text-align: center;
+}
+
+
+/*   @MEDIA - TORNAR SITE RESPONSIVO   */
+@media (max-width: 800px){
+    header h1{
+        font-size: 1.2rem;
+    }
+    header figure img{
+        width: 130px;
+    }
+    header .navegacao ul li{
+        margin: 0 8px;
+        padding: 8px;
+        width: 75px;
+    }
+}
+
+
+@media (max-width: 700px){
+    header h1{
+        font-size: 1.08rem;
+    }
+    header .navegacao ul{
+        flex-direction: column;
+    }
+    header .navegacao ul li{
+        margin-bottom: 5px;
+        padding: 10px;
+        width: 80px;
+    }
+}
+
+@media (max-width: 600px){
+    header .navegacao ul{
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    header .navegacao{
+        position: static;
+        top: 0px;
+        right: 10px;
+    }
+
+
+    header .navegacao ul li{
+        margin: 0 10px;
+        padding: 10px;
+        width: 80px;
+        background-color: var(--corBackgroundPrimaria);
+        text-align: center;
+    }
+}
+
+
+/*   EXTRAS   */
+
+
