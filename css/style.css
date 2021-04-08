@@ -58,7 +58,8 @@ header h1{
 }
 .titulo h2{
     padding: 25px;
-    background-color: var(--corBackgroundPrimaria)
+    background-color: var(--corBackgroundPrimaria);
+    color: var(--corTextPrimaria);
 }
 header figure img{
     width: 150px;
