@@ -33,7 +33,7 @@ html, body, figure, img, div, p, h1, h2, h3, h4, h5, h6, ul, li, a, main {
 
 /*   BODY   */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial Narrow, Helvetica, sans-serif;
 }
 
 
@@ -41,25 +41,23 @@ body {
 header .container{
     position: relative;
 }
+
+header section{
+    width: 100%;
+    height: 75vh;
+}
 header section.imagem_fundo{
     background-image: url(../img/imagem_fundo.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
     min-height: 75vh;
 }
 header h1{
-    position: absolute;
-    font-size: 1.5rem;
-    top: 95px;
-    left: 10px;
-    color: var(--corTextPrimaria);
-}
-.titulo{
-    margin: 30px auto;
-    width: 80%;
+    display: none;
 }
 .titulo h2{
-    margin: 20px auto;
-    padding: 10px;
+    padding: 25px;
     background-color: var(--corBackgroundPrimaria)
 }
 header figure img{
@@ -113,10 +111,11 @@ main .conteiner{
     max-width: 80%;
     margin: 20px auto;
     padding: 30px;
-    border: 3px solid var(--corBackgroundPrimaria);
 }
 main section p{
     font-size: 1rem;
+    line-height: 1.5em;
+    letter-spacing: 0.075em;
     text-align: justify;
     margin-top: 20px;
 }
@@ -130,6 +129,7 @@ footer{
 footer .conteiner{
     padding: 40px;
     padding-bottom: 10px;
+    position: relative;
 }
 footer .area_contato{
     display: flex;
@@ -143,6 +143,13 @@ footer ul li{
 footer ul li a{
     color: var(--corTextSecundaria);
 }
+footer img{
+    position: absolute;
+    right: 15px;
+    top: 1px;
+    width: 185px;
+}
+
 footer .portifolio{
     display: flex;
     flex-direction: column;
@@ -169,6 +176,8 @@ footer .portifolio p{
 
 
 /*   @MEDIA - TORNAR SITE RESPONSIVO   */
+/*
+
 @media (max-width: 800px){
     header h1{
         font-size: 1.2rem;
@@ -219,6 +228,7 @@ footer .portifolio p{
     }
 }
 
+*/
 
 /*   EXTRAS   */
 
