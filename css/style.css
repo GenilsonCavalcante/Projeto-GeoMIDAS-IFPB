@@ -138,6 +138,7 @@ footer .area_contato{
     align-items: left;
 }
 footer ul li{
+    text-align: center;
     margin: 10px;
 }
 footer ul li a{
