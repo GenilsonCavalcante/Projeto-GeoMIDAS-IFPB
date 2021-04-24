@@ -78,10 +78,8 @@ header figure img{
     position: absolute;
     top: 10px;
     left: 10px;
-    opacity: .8;
 }
 header figure img:hover{
-    opacity: 1;
     cursor: pointer;
     
 }
