@@ -7,9 +7,11 @@ button.addEventListener("click", function() {
     if (container.style.position === "fixed") {
         /*container.style.position = "absolute";*/
         document.getElementById("clicker").style.position = "absolute";
+        document.getElementById("navegacao").style.right = "-100%";
     } else {
         /*container.style.position = "absolute";*/
         document.getElementById("clicker").style.position = "fixed";
+        document.getElementById("navegacao").style.right = "0";
     }
 
 });
@@ -44,12 +46,11 @@ clicado.onclick = function () {
 
 
 
-
 /*
 $(document).ready(function () {
-    $(".hamburguer").click(function () {
-        $(this).toggleClass("active");
-        $(".menu").toggleClass("active");
+    $(".menu").click(function () {
+        $(this).toggleClass("check");
+        $(".menu").toggleClass("check");
     });
 });
 */

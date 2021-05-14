@@ -293,7 +293,7 @@ Valor anterior>
     header .navegacao{
         position: fixed;
         top: 0;
-        right: 0; /*APARECE/DESAPARECE*/
+        right: -100%; /*APARECE/DESAPARECE - MENU*/
 
         margin: 0;
         height: 100vh;
@@ -333,11 +333,6 @@ Valor anterior>
         color: var(--corTextSecundaria);
         border-bottom: 2px solid var(--corTextSecundaria);
     }    
-
-    header .navegacao{
-        right: 0;
-    }
-
 
  
 
