@@ -198,7 +198,7 @@ footer .portifolio p{
 
 
 
-    /*   MENU   */
+    /*  BOTÃO DO MENU   */
 
     .menu{
         width: 50px;
@@ -264,7 +264,7 @@ footer .portifolio p{
         right: 20px;
         z-index: 999;
     }
-  div.menu:hover{
+    div.menu:hover{
         position: fixed;
     }
     
@@ -289,6 +289,7 @@ Valor anterior>
         z-index: 999;
     }
 */
+    /*   TRANSIÇÃO DO MENU   */
 
     header .navegacao{
         position: fixed;
@@ -296,7 +297,7 @@ Valor anterior>
         right: -100%; /*APARECE/DESAPARECE - MENU*/
 
         margin: 0;
-        height: 100vh;
+        height: 110vh;/*ALTERADO*/
         background-color: #FFF;
 
         width: 100%;
@@ -311,32 +312,75 @@ Valor anterior>
         z-index: 1;
     }
     header .navegacao ul{
-        justify-content: block;
         flex-direction: column;
     }
+
+
+
+    /*ASDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
     header .navegacao ul li{
-        margin: 0;
+        margin-top: 10px;
+        margin-right: 70px;
         padding: 0;
         width: 100%;
         max-width: 250px;
         background-color: initial;
     }
     header .navegacao ul li:hover{
-        background-color: var(--corBackgroundButton);
+        color: var(--corBackgroundPrimaria);
         transition: 1s;
     }
-    header .navegacao ul li a{
-        color: var(--corTextPrimaria);
-        font-weight: bold;/*excluir*/
-    }
-    header .navegacao ul li a:hover{
-        color: var(--corTextSecundaria);
-        border-bottom: 2px solid var(--corTextSecundaria);
-    }    
-
  
+    /* Conteúdo do Site */
+
+    header figure img {
+        width: 130px;
+        top: 16px;
+    }
+
+    main .conteiner {
+        max-width: 95%;
+    }
+
+    footer img {
+        top: -54px;
+        right: -10px;
+    }
 
 
+@media (max-width: 400px){
+
+
+    header figure img {
+        width: 100px;
+        top: 16px;
+    }
+
+    main .conteiner {
+        max-width: 100%;
+    }
+    main .titulo h2{
+        font-size: 20px;
+    }
+    main section p {
+        font-size: 0.8em;
+        line-height: 1.3em;
+        letter-spacing: 0.080em;
+        margin-top: 15px;
+    }
+
+    footer .conteiner {
+        padding: 18px;
+    }
+    footer nav{
+        margin-top: 25px;
+    }
+    footer ul li a {
+        font-size: 0.8em;
+    }
+    footer .portifolio p {
+        font-size: 0.8em;
+    }
 
 
 
@@ -399,3 +443,4 @@ Valor anterior>
 
 /*   EXTRAS   */
 
+}
