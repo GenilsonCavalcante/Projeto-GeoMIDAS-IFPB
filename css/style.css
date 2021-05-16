@@ -196,8 +196,6 @@ footer .portifolio p{
 
 @media (max-width: 580px){
 
-
-
     /*  BOTÃO DO MENU   */
 
     .menu{
@@ -267,30 +265,7 @@ footer .portifolio p{
     div.menu:hover{
         position: fixed;
     }
-    
-/*
-Novo valorsdfsdf:
-    top: -92px;
-    right: -91px;
-
-Valor anterior>
-    top: 10px;
-    right: 20px;
-*/
-
-
-/*
-    .navegacao{
-        display: block;
-    }
-
-    .hamburguer{
-        display: block;
-        z-index: 999;
-    }
-*/
-    /*   TRANSIÇÃO DO MENU   */
-
+ 
     header .navegacao{
         position: fixed;
         top: 0;
@@ -314,10 +289,6 @@ Valor anterior>
     header .navegacao ul{
         flex-direction: column;
     }
-
-
-
-    /*ASDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
     header .navegacao ul li{
         margin-top: 10px;
         margin-right: 70px;
@@ -347,10 +318,8 @@ Valor anterior>
         right: -10px;
     }
 
-
+}
 @media (max-width: 400px){
-
-
     header figure img {
         width: 100px;
         top: 16px;
@@ -381,66 +350,6 @@ Valor anterior>
     footer .portifolio p {
         font-size: 0.8em;
     }
-
-
-
-
-
-
-    /*##################################/
-
-.hamburguer{
-    width: 30px;
-    height: 30px;
-
-    background-color: black;
-    cursor: pointer;
-
-    display: none;
-}
-
-.hamburguer:after{
-    content: "";
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 70%;
-    height: 5%;
-    border-radius: 5px;
-
-    background-color: #000;
-}
-
-/##################################*/
-
-
-    /*#############################################/
-
-    .hamburguer{
-        display: block;
-        z-index: 999;
-    }
-    .menu{
-        top: 0;
-        right: -100%;
-
-        margin: 0;
-        height: 80vh;
-        background-color: #333;
-
-        width: 100%;
-        max-width: 250px;
-
-        padding: 350px 20px;
-
-        flex-direction: column;
-    }
-
-    /#############################################*/
 }
 
 /*   EXTRAS   */
-
-}
