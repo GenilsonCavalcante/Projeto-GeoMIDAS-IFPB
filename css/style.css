@@ -177,6 +177,39 @@ footer .portifolio p{
 }
 @media (max-width: 580px){
     /*  BOTÃO DO MENU   */
+
+    header .navegacao{
+        position: fixed;
+        top: 0;
+        right: -100%; /*APARECE/DESAPARECE - MENU*/
+
+        margin: 0;
+        height: 100%;/*ALTERADO*/
+        background-color: #FFF;
+
+        width: 100%;
+        max-width: 250px;
+        padding: 100px 20px;
+        flex-direction: column;
+        transition: 0.6s ease;
+        z-index: 1;
+    }
+    header .navegacao ul{
+        flex-direction: column;
+    }
+    header .navegacao ul li{
+        margin-top: 10px;
+        margin-right: 70px;
+        padding: 0;
+        width: 100%;
+        max-width: 250px;
+        background-color: initial;
+    }
+    header .navegacao ul li:hover{
+        color: var(--corBackgroundPrimaria);
+        transition: 1s;
+    }
+
     .menu{
         width: 50px;
         height: 50px;
@@ -244,37 +277,6 @@ footer .portifolio p{
         position: fixed;
     }
  
-    header .navegacao{
-        position: fixed;
-        top: 0;
-        right: -100%; /*APARECE/DESAPARECE - MENU*/
-
-        margin: 0;
-        height: 100%;/*ALTERADO*/
-        background-color: #FFF;
-
-        width: 100%;
-        max-width: 250px;
-        padding: 100px 20px;
-        flex-direction: column;
-        transition: 0.6s ease;
-        z-index: 1;
-    }
-    header .navegacao ul{
-        flex-direction: column;
-    }
-    header .navegacao ul li{
-        margin-top: 10px;
-        margin-right: 70px;
-        padding: 0;
-        width: 100%;
-        max-width: 250px;
-        background-color: initial;
-    }
-    header .navegacao ul li:hover{
-        color: var(--corBackgroundPrimaria);
-        transition: 1s;
-    }
  
     /* Conteúdo do Site */
     header figure img {
@@ -292,12 +294,14 @@ footer .portifolio p{
 
 
 @media (max-width: 400px){
+
+
     header figure img {
         width: 100px;
         top: 16px;
     }
     main .conteiner {
-        max-width: 100%;
+        max-width: 98%;
     }
     main .titulo h2{
         font-size: 20px;
