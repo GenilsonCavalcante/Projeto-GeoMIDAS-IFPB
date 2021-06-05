@@ -9,7 +9,6 @@ ESTRUTURA BASE
 ***** PÁGINA INICIAL
 ***** FOOTER
 ***** @MEDIA - TORNAR SITE RESPONSIVO
-***** EXTRAS
 */
 /*   ESTILOS GERAIS   */
 html, body, figure, img, div, p, h1, h2, h3, h4, h5, h6, ul, li, a, main, label, span, input {
@@ -325,4 +324,3 @@ footer .portifolio p{
         font-size: 0.8em;
     }
 }
-/*   EXTRAS   */
